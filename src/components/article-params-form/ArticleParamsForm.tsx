@@ -7,7 +7,7 @@ import { useState, useRef, useEffect } from 'react';
 import clsx from 'clsx';
 
 export const ArticleParamsForm = () => {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 	const formRef = useRef<HTMLElement>(null);
 
 	const toggle = () => {
