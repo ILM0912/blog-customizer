@@ -26,10 +26,18 @@ export const Option = (props: OptionProps) => {
 	const inputId = `${groupName}_radio_item_with_value__${value}`;
 	const isChecked = value === selected.title;
 
+	const handleKeyDown = (event: React.KeyboardEvent) => {
+		if (event.key === ' ') {
+			event.preventDefault();
+			handleChange();
+		}
+	};
+
 	return (
 		<div
 			role='button'
-			aria-label='я пока не понимаю что это'
+			aria-label={`изменить размер шрифта на ${value}`}
+			onKeyDown={handleKeyDown}
 			className={styles.item}
 			key={value}
 			data-checked={isChecked}
