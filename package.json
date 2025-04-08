@@ -1,5 +1,6 @@
 {
 	"name": "Blog-customizer",
+	"homepage": "https://ilm0912.github.io/blog-customizer",
 	"version": "1.0.0",
 	"main": "index.js",
 	"license": "MIT",
@@ -93,6 +94,5 @@
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
 		}
-	},
-	"homepage": "./"
+	}
 }
